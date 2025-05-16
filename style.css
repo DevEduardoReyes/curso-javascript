@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F2F4F8;
+    color: #0A2540;
+  }
+  
+  header {
+    background: #247fda;
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+ header a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(82, 248, 6);
+ } 
+
+  nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  
+  .hero {
+    
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url('imagenes/portada.webp');
+    
+  }
+  
+  .hero h1 {
+    font-family:'arial';
+    font-size: 4rem;
+  }
+  
+  .hero p {
+    font-family: 'Segoe UI';
+    font-size: 2.2rem;
+    margin-top: 1rem;
+  }
+  
+  .section {
+    padding: 3rem 2rem;
+  }
+  .section1 {
+    padding: 3rem 2rem;
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .section1 p {
+    max-width: 600px;
+  }
+
+
+  .section h2 {
+    color: #0A2540;
+  }
+  
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .service {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .contact {
+    background: #0A2540;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .contact a {
+    color: #A3FF4F;
+    text-decoration: none;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1C1C1E;
+    color: white;
+  }
