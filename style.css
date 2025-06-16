@@ -69,6 +69,8 @@ body {
   
   
   
+  
+  
   ul {
     list-style: none;
     margin: 0;
@@ -85,7 +87,14 @@ body {
     
   }
 
+  .menu-responsive {
   
+    position: absolute;
+    cursor: pointer;
+   
+   right: 1.5rem;
+    font-size: 3rem;
+  }
 
  
   .hero {
@@ -203,4 +212,31 @@ body {
     padding: 0;
     background: #1C1C1E;
     color: white;
+  }
+
+  @media (max-width: 500px) {
+    body{background: red;}
+    
+    nav ul{
+      transform: translateX(-600px);
+      display: block ;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #0A2540;
+      height: 100%;
+      opacity: 0.9;
+      padding: 1rem;
+      transition: transform 0.5s ease-in-out;
+      
+    }
+    nav ul.show{
+      transform: translateX(-12rem);
+    }
+
+    nav ul a{
+      margin-bottom: 2rem;
+
+    
+    }
   }
