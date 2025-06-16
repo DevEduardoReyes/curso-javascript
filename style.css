@@ -11,17 +11,17 @@ body {
     
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 47%, rgba(0, 212, 255, 1) 100%);    
     color: rgb(255, 255, 255);
-    padding: 5px 20px;
+    padding: 0.25rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 25px;
+    font-size: 1.5rem;
   
   }
  header img {
 
-  width: 100px; 
-  height: 53px;
+  width: 7rem; 
+  height: auto;
   
  }
   
@@ -33,17 +33,20 @@ body {
   nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 5px;
   
  } 
 
   nav a {
     color: white;
-    margin-left: 4rem;
     text-decoration: none;
+    margin-left: 4rem;
     padding-left: 0px;
-    
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
   
   
@@ -69,7 +72,7 @@ body {
  
   .hero {
     width: 100%;
-    height: 400px;
+    height: 25rem;
     font-family: "Oswald", sans-serif;  
     font-optical-sizing: auto;
     text-align: center;
@@ -96,27 +99,27 @@ body {
   .banner {
     padding: 3rem 2rem;
     text-align: left;
-    font-size: 30px;
+    font-size: 1.8rem;
     background: linear-gradient(90deg, rgb(35, 150, 226) 0%, rgb(90, 213, 235) 47%, rgb(35, 142, 192) 100%);
     width: 100%;
-    height: 400px;
-    margin-top: 3px;;
+    height: auto;
+    margin-top: 3px;
   }
 
   .banner p {
-    max-width: 600px;
+    max-width: 500px;
   }
 
 
   .section h2 {
     color: #0a0000;
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
   }
   
   .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;
     margin-top: 2rem;
   }
@@ -125,19 +128,19 @@ body {
     background: rgb(136, 136, 136);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 1.5rem;
-    border-radius: 10px;
+    border-radius: 1rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     
   }
 
   .service:hover {
-    transform: translateY(-12px);
+    transform: translateY(-10px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
   }
   
   .service img {
     width: 100%;
-    height: 200px;
+    height: 15rem;
     object-fit: cover;
     border-radius: 10px;
   }
