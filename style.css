@@ -6,12 +6,25 @@ body {
     background-color: #d3d2d4;
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%231d37b4' fill-opacity='0.19' fill-rule='evenodd'/%3E%3C/svg%3E");
   }
+   /* lineas rojas
+   *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ * {
+    outline: 1px solid red;
+  }
+   */
+ 
   
+
   header {
-    
+    width: 100%;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 47%, rgba(0, 212, 255, 1) 100%);    
     color: rgb(255, 255, 255);
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +32,7 @@ body {
   
   }
  header img {
+  margin-left: 1rem;
 
   width: 7rem; 
   height: auto;
@@ -31,22 +45,26 @@ body {
   }
   
   nav {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 5px;
+    padding: 0.5rem 1rem; 
+  width: 100%;
+  box-sizing: border-box;
   
  } 
 
   nav a {
     color: white;
     text-decoration: none;
-    margin-left: 4rem;
+    margin-left: 1.5rem;
     padding-left: 0px;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    
   }
   
   
@@ -72,11 +90,13 @@ body {
  
   .hero {
     width: 100%;
-    height: 25rem;
+    height: auto;
+    min-height: 25rem; 
+    
     font-family: "Oswald", sans-serif;  
     font-optical-sizing: auto;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 4rem 0;
     background: url('imagenes/hero2.webp') no-repeat center center/cover;
     color: #000000;
     
@@ -97,7 +117,7 @@ body {
     padding: 3rem 2rem;
   }
   .banner {
-    padding: 3rem 2rem;
+    padding: 3rem 0;
     text-align: left;
     font-size: 1.8rem;
     background: linear-gradient(90deg, rgb(35, 150, 226) 0%, rgb(90, 213, 235) 47%, rgb(35, 142, 192) 100%);
@@ -107,7 +127,12 @@ body {
   }
 
   .banner p {
+    margin-left: 1rem;
     max-width: 500px;
+  }
+
+  .banner h2 {
+    margin-left: 1rem;
   }
 
 
@@ -173,8 +198,9 @@ body {
   }
   
   footer {
+    width: 100%;
     text-align: center;
-    padding: 1rem;
+    padding: 0;
     background: #1C1C1E;
     color: white;
   }
