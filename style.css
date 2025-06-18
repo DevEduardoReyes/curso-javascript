@@ -37,7 +37,7 @@ body {
  header img {
   margin-left: 1rem;
 
-  width: 7rem; 
+  width: 6rem; 
   height: auto;
   
  }
@@ -45,6 +45,7 @@ body {
   header a {
     color: white;
     text-decoration: none;
+    
   }
   
   nav {
@@ -67,7 +68,8 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    
+ 
+  
   }
   
   
