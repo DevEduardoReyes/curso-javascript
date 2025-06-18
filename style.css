@@ -111,7 +111,7 @@ body {
     font-optical-sizing: auto;
     text-align: center;
     padding: 4rem 0;
-    background: url('imagenes/hero2.webp') no-repeat center center/cover;
+    background: url('imagenes/hero3.webp') no-repeat center center/cover;
     color: #000000;
     
   }
@@ -220,7 +220,7 @@ body {
   }
 
   @media (max-width: 500px) {
-    body{background: red;}
+    /*body{background: red;}*/
     
     nav ul{
       transform: translateX(-600px);
