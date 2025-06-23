@@ -104,6 +104,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
    display: none;
    right: 1.5rem;
     font-size: 3rem;
+    
   }
 
  
@@ -234,13 +235,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     padding: 2rem;
     
     font-size:1.2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+
   }
   
   .final ul {
     display: block;
     text-align: left;
     list-style: disc;
-
+    
   }
   .final ul li {
     margin-bottom: 1rem;
@@ -252,14 +256,28 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     margin-bottom: 1rem;
    
   }
-
+  .contact {
+    text-align: center;
+   
+  }
+.final section{
+  flex: 0 0 20%;
+}
 
 
   .contact a {
     color: #A3FF4F;
     text-decoration: none;
+  } 
+  .nosotrosfinal {
+    text-align: center;
+    align-items: center;
+    
+    
   }
   
+
+
   footer {
     width: 100%;
     text-align: center;
@@ -268,14 +286,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     color: white;
   }
 
-  @media (max-width: 500px) {
+  
+  @media (max-width: 620px) {
     /*body{background: red;}*/
     
     nav ul{
       transform: translateX(-600px);
       display: block ;
       position: absolute;
-      top: 0;
+      top: 100%;
       left: 0;
       background: #0A2540;
       height: auto;
@@ -286,6 +305,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     }
     nav ul.show{
       transform: translateX(0);
+      top: 100%;
     }
 
     nav ul a{
@@ -294,14 +314,18 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
     .menu-responsive{
       display: block;
+      
     }
 
     .final{
       flex-direction: column;
-      align-items: center;
-    }
 
     
+    }
+  
+    .final ul{
+      margin-left: 2rem;
+    }
   }
 
   @media(max-width: 380px){
