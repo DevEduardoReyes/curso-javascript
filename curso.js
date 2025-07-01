@@ -8,3 +8,7 @@ document.querySelectorAll('nav ul li a').forEach((enlace) => {
       document.querySelector('nav ul').classList.remove('show');
     });
   });
+
+
+  const prueba = document.getElementById('barra');
+  console.log(prueba);
